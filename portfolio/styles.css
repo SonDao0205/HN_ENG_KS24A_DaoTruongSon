@@ -210,12 +210,11 @@
     display: flex;
     flex-direction: row;
     padding: 70px 100px;
-    gap: 40px;
+    gap: 190px;
 }
 
 .container .footer .contact{
-    width: 100%;
-    max-width:360px;
+    width:360px;
     height: 100%;
     max-height: 313px;
     display: flex;
@@ -317,21 +316,47 @@
     cursor: pointer;
 }
 
-
-@media screen and (max-width: 1024px) {
-    
-    .container .banner{
-        flex-direction: column;
-    }
-    .container .latestWork{
-        flex-direction: row;
+@media screen and (max-width: 768px) {
+    .container {
+        padding: 20px;
     }
 
-    .container .latestWork .row{
+    .container .banner {
+        padding: 20px;
+        text-align: center;
         flex-direction: column;
     }
 
-    .container .skill .text-center .row{
+    .container .banner .bannerContent{
+        gap: 20px;
+    }
+
+    .container .banner .bannerContent .content2 {
+        font-size: 40px;
+        line-height: 50px;
+    }
+
+    .container .latestWork,
+    .container .skill {
+        padding: 20px;
+    }
+
+    .container .footer {
         flex-direction: column;
+        gap: 50px;
+        padding: 40px 20px;
+    }
+
+    .container .footer .formContact {
+        width: 100%;
+    }
+
+    .container .footer .contact {
+        width: 100%;
+        text-align: center;
+    }
+
+    .container .footer .contact .platform {
+        justify-content: center;
     }
 }
